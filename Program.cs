@@ -11,23 +11,46 @@
 
 // int x1 = 7, y1 = -5, z1 = 0,
 //     x2 = 1, y2 = -1, z2 = 9;
-Console.WriteLine("Введите координату X точки А: ");
-int x1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите координату Y точки А: ");
-int y1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите координату Z точки А: ");
-int z1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите координату X точки B: ");
-int x2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите координату Y точки B: ");
-int y2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите координату Z точки B: ");
-int z2 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите координату X точки А: ");
+// int x1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите координату Y точки А: ");
+// int y1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите координату Z точки А: ");
+// int z1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите координату X точки B: ");
+// int x2 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите координату Y точки B: ");
+// int y2 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите координату Z точки B: ");
+// int z2 = Convert.ToInt32(Console.ReadLine());
 
-int A = x2 - x1;
-int B = y2 - y1;
-int C = z1 - z2;
+// int A = x2 - x1;
+// int B = y2 - y1;
+// int C = z1 - z2;
 
-double length = Math.Sqrt(A * A + B * B + C * C);
-length = Math.Round(length,2);
-Console.WriteLine($"Расстояние между точками в 3D пространстве: " + length);
+// double length = Math.Sqrt(A * A + B * B + C * C);
+// length = Math.Round(length,2);
+// Console.WriteLine($"Расстояние между точками в 3D пространстве: " + length);
+
+
+void PrintArray(int[] MyArray){
+    int count = 0;
+    int possition = MyArray.Length;
+    Console.Write("[");
+    while (count < possition) {
+        Console.Write(MyArray[count]+ " ");  
+        count++;
+        
+    }
+    Console.Write("]");
+}
+Console.WriteLine("Введите число: ");
+int n = Convert.ToInt32(Console.ReadLine());
+int[] array = new int[n];
+int x = 1;
+for (int i = 0; i < array.Length; i++)
+{
+    array[i] = Convert.ToInt32(Math.Pow(x + i, 3));//;
+
+}
+PrintArray(array);
