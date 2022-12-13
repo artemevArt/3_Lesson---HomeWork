@@ -33,24 +33,24 @@
 // Console.WriteLine($"Расстояние между точками в 3D пространстве: " + length);
 
 
-void PrintArray(int[] MyArray){
-    int count = 0;
-    int possition = MyArray.Length;
-    Console.Write("[");
-    while (count < possition) {
-        Console.Write(MyArray[count]+ " ");  
-        count++;
+// void PrintArray(int[] MyArray){
+//     int count = 0;
+//     int possition = MyArray.Length;
+//     Console.Write("[");
+//     while (count < possition) {
+//         Console.Write(MyArray[count]+ " ");  
+//         count++;
         
-    }
-    Console.Write("]");
-}
-Console.WriteLine("Введите число: ");
-int n = Convert.ToInt32(Console.ReadLine());
-int[] array = new int[n];
-int x = 1;
-for (int i = 0; i < array.Length; i++)
-{
-    array[i] = Convert.ToInt32(Math.Pow(x + i, 3));//;
+//     }
+//     Console.Write("]");
+// }
+// Console.WriteLine("Введите число: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[n];
+// int x = 1;
+// for (int i = 0; i < array.Length; i++)
+// {
+//     array[i] = Convert.ToInt32(Math.Pow(x + i, 3));//;
 
-}
-PrintArray(array);
+// }
+// PrintArray(array);
